@@ -1,0 +1,23 @@
+{
+  "name": "farmstead",
+  "version": "1.0.0",
+  "description": "farmstead scene using threejs",
+  "main": "server.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Sara Akmal",
+  "license": "MIT",
+  "dependencies": {
+    "express": "latest",
+    "express.io": "latest",
+    "path": "^0.12.7",
+    "resolve-path": "^1.4.0",
+    "socket.io": "latest"
+  },
+  "engines": {
+    "node": "15.6.0"
+  },
+  "repository": {
+    "type": "git"
+  }
+}
