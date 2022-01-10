@@ -400,11 +400,11 @@ function loadFireflies(){
 
 function loadTrees(){
      const gltfLoader = new THREE.GLTFLoader();
-         gltfLoader.load( 'js/models/tree/scene.gltf', function ( object ) {
+         gltfLoader.load( 'js/models/tree2/scene.gltf', function ( object ) {
                
           
                var model = object.scene;
-               model.scale.set(0.05,0.05,0.05);
+               model.scale.set(25,25,25);
                model.position.set(10,-0.5,-30);
                scene.add(model);
            
@@ -414,11 +414,11 @@ function loadTrees(){
            
           } );
         
-         gltfLoader.load( 'js/models/tree/scene.gltf', function ( object ) {
+         gltfLoader.load( 'js/models/tree2/scene.gltf', function ( object ) {
                
           
                var model = object.scene;
-               model.scale.set(0.05,0.05,0.05);
+               model.scale.set(25,25,25);
                model.position.set(10,-0.5,150);
                scene.add(model);
            
@@ -428,11 +428,11 @@ function loadTrees(){
            
           } );
 
-          gltfLoader.load( 'js/models/tree/scene.gltf', function ( object ) {
+          gltfLoader.load( 'js/models/tree2/scene.gltf', function ( object ) {
                
           
                var model = object.scene;
-               model.scale.set(0.05,0.05,0.05);
+               model.scale.set(25,25,25);
                model.position.set(-50,-0.5,80);
                scene.add(model);
            
@@ -442,12 +442,25 @@ function loadTrees(){
            
           } );
           
-          gltfLoader.load( 'js/models/tree/scene.gltf', function ( object ) {
+          gltfLoader.load( 'js/models/tree2/scene.gltf', function ( object ) {
                
           
                var model = object.scene;
-               model.scale.set(0.05,0.05,0.05);
+               model.scale.set(25,25,25);
                model.position.set(100,-0.3,40);
+               scene.add(model);
+           
+          }, undefined, function ( e ) {
+           
+            console.error( e );
+           
+          } );
+          gltfLoader.load( 'js/models/tree2/scene.gltf', function ( object ) {
+               
+          
+               var model = object.scene;
+               model.scale.set(25,25,25);
+               model.position.set(-100,-0.3,150);
                scene.add(model);
            
           }, undefined, function ( e ) {
