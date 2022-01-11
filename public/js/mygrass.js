@@ -169,7 +169,7 @@ ground_geometry.verticesNeedUpdate = true;
 var ground_material = new THREE.MeshPhongMaterial({color: 0x000900});
 var ground = new THREE.Mesh(ground_geometry, ground_material);
 
-for (var i = 0; i < ground.geometry.vertices.length; i++){
+for (var i = 0; i < 1089; i++){
   var v = ground.geometry.vertices[i];
   v.y = getYPosition(v.x, v.z); 
 }
